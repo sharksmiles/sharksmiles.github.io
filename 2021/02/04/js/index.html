@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="sharksmile Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="一、数组API 1. 连接：arr.join(“连接符) 1用连接符把数组里面的元素连接成字符串, arr.join(&quot;&quot;)能无缝连接 2. 拼接：arr.concat(“a”,”b”,arr1) 12(1)不会修改原数组，返回新数组。(2)concat方法中的数组会被打散为单个元素再拼接。  3. 截取：arr.slice(start[,end]) 1234(1)不会修改原数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Js常用Api">
+<meta property="og:url" content="http://example.com/2021/02/04/js/index.html">
 <meta property="og:site_name" content="sharksmile Blog">
+<meta property="og:description" content="一、数组API 1. 连接：arr.join(“连接符) 1用连接符把数组里面的元素连接成字符串, arr.join(&quot;&quot;)能无缝连接 2. 拼接：arr.concat(“a”,”b”,arr1) 12(1)不会修改原数组，返回新数组。(2)concat方法中的数组会被打散为单个元素再拼接。  3. 截取：arr.slice(start[,end]) 1234(1)不会修改原数">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-02-04T08:22:19.000Z">
+<meta property="article:modified_time" content="2021-02-04T08:49:37.286Z">
 <meta property="article:author" content="sharksmiles">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/02/04/js/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>sharksmile Blog</title>
+  <title>Js常用Api | sharksmile Blog</title>
   
 
 
@@ -164,9 +168,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -182,10 +187,9 @@
       <meta itemprop="name" content="sharksmile Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/04/js/" class="post-title-link" itemprop="url">Js常用Api</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Js常用Api
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -209,7 +213,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>一、数组API<br> <strong>1. 连接：arr.join(“连接符)</strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用连接符把数组里面的元素连接成字符串, arr.join(&quot;&quot;)能无缝连接</span><br></pre></td></tr></table></figure><br> <strong>2. 拼接：arr.concat(“a”,”b”,arr1)</strong></p>
+        <p>一、数组API<br> <strong>1. 连接：arr.join(“连接符)</strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用连接符把数组里面的元素连接成字符串, arr.join(&quot;&quot;)能无缝连接</span><br></pre></td></tr></table></figure><br> <strong>2. 拼接：arr.concat(“a”,”b”,arr1)</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(1)不会修改原数组，返回新数组。</span><br><span class="line">(2)concat方法中的数组会被打散为单个元素再拼接。</span><br></pre></td></tr></table></figure>
 <p> <strong>3. 截取：arr.slice(start[,end])</strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(1)不会修改原数组，返回新的子数组。</span><br><span class="line">(2)含头不含尾。</span><br><span class="line">(3)省略第二个参数表示从start位置开始一直截取到末尾。</span><br><span class="line">(4)支持负数，表示倒数第几个。</span><br></pre></td></tr></table></figure><br> <strong>4. 删除、插入、替换：arr.splice(start,n[,value1,value2…])</strong><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(1)直接修改原数组。</span><br><span class="line">(2)返回所有被删除元素组成的子数组。</span><br><span class="line">(3)如果是插入，删除了0个数，那么从start位置开始以及之后的元素会被顺移。</span><br></pre></td></tr></table></figure><br>  <strong>5. 翻转数组：arr.reverse()</strong><br>       <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">强调：(1)直接修改原数组。</span><br></pre></td></tr></table></figure></p>
 <p>  <strong>6. 数组排序：arr.sort()</strong></p>
@@ -343,167 +347,30 @@
          (2)若要查找所有正则必须加g，不加g只能查找第一个，而且要放进循环里面。
 </code></pre>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/01/sharksmiles/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/img.jfif">
-      <meta itemprop="name" content="sharksmiles">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sharksmile Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/01/sharksmiles/" class="post-title-link" itemprop="url">Js基本Api知识</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-02-01 18:12:32" itemprop="dateCreated datePublished" datetime="2021-02-01T18:12:32+08:00">2021-02-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-04 15:22:37" itemprop="dateModified" datetime="2021-02-04T15:22:37+08:00">2021-02-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ol>
-<li>var的变量提升的底层原理是什么?<br>JS引擎的工作方式是:<br>1）先解析代码，获取所有被声明的变量；<br>2）然后在运行。也就是说分为预处理和执行两个阶段。<br>变量提升：所有变量的声明语句都会被提升到代码头部。但是变量提升只对var命令声明的变量有效，如果一个变量不是用var命令声明的，就不会发生变量提升；JS里的function也可看做变量，也存在变量提升情况。</li>
-</ol>
-<ol start="2">
-<li>JS如何计算浏览器的渲染时间?<br>1） 解析HTML生成DOM树。<br>2） 解析CSS生成CSSOM规则树。<br>3） 将DOM树与CSSOM规则树合并在一起生成渲染树。<br>4） 遍历渲染树开始布局，计算每个节点的位置大小信息。<br>5）将渲染树每个节点绘制到屏幕。</li>
-</ol>
-<ol start="3">
-<li>垂直水平居中的方式?<br>1）flex布局<br><code>display: flex; //flex布局 justify-content: center; //使子项目水平居中 align-items: center; //使子项目垂直居中</code><br>2）定位流（子绝父相）<br><code>父元素设置为：position: relative;  子元素设置为：position: absolute; </code><br>距上50%，据左50%，然后减去元素自身宽度的距离就可以实现<br><code>width: 100px; height: 100px; position: absolute; left: 50%; top: 50%; margin: -50px 0 0 -50px;</code></li>
-<li>实现一个三栏布局，中间版块自适应方法有哪些?</li>
-</ol>
-<ol start="5">
-<li>如何判断一个对象是否为数组?<br><code>a) isPrototypeOf()方法，判定Array是不是在obj的原型链中，如果是，则返回true,否则false; b) obj  instanceof  Array; c) Object.prototype.toString.call(obj)； d) Array.isArray(obj);  // 不推荐 </code></li>
-</ol>
-<ol start="6">
-<li>margin坍塌?(当两个盒子在垂直方向上设置margin值时，会出现塌陷现象)<br>a).给父盒子添加border<br>b).给父盒子添加padding-top<br>c).给父盒子添加overflow:hidden<br>d).父盒子:position:fixed<br>e).父盒子:display:table<br>f).给子元素的前面添加一个兄弟元素,属性为:content:””; overflow:hidden;</li>
-</ol>
-<ol start="7">
-<li>伪类与伪元素的区别？<br>a) 定义区别<br>伪类<br>   伪类用于选择DOM树之外的信息，或是不能用简单选择器进行表示的信息。前者包含那些匹配指定状态的元素，比如:visited，:active；后者包含那些满足一定逻辑条件的DOM树中的元素，比如:first-child，:first-of-type，：target。<br>伪元素<br>伪元素为DOM树没有定义的虚拟元素。不同于其他选择器，它不以元素为最小选择单元，它选择的是元素指定内容。比如::before表示选<br>择元素内容的之前内容，也就是””；::selection表示选择元素被选中的内容。    </li>
-<li>css样式优先级，各自的权重?<br>优先级别：<br>通用选择器（*） &lt; 元素(类型)选择器 &lt; 类选择器 &lt; 属性选择器 &lt; 伪类 &lt; ID 选择器 &lt; 内联样式<br> 权重：</li>
-</ol>
-<p> 1).第一等：代表内联样式，如: style=””，权值为1000。<br> 2)第二等：代表ID选择器，如：#content，权值为100。<br> 3)第三等：代表伪类和属性选择器，如.content，权值为10。<br> 4)第四等：代表类型选择器和伪元素选择器，如div p，权值为1。</p>
-<ol start="9">
-<li>判断数据类型有哪些方法？</li>
-</ol>
-<p>1)typeof<br>typeof 是一个操作符，其右侧跟一个一元表达式，并返回这个表达式的数据类型。返回的结果用该类型的字符串(全小写字母)形式表示，包括以下 7 种：number、boolean、symbol、string、object、undefined、function 等。<br> 2)instanceof<br>instanceof 是用来判断 A 是否为 B 的实例，表达式为：A instanceof B，如果 A 是 B 的实例，则返回 true,否则返回 false。 在这里需要特别注意的是：instanceof 检测的是原型<br> 3)constructor<br>当一个函数 F被定义时，JS引擎会为F添加 prototype 原型，然后再在 prototype上添加一个 constructor 属性，并让其指向 F 的引用。<br> 4)toString<br>toString() 是 Object 的原型方法，调用该方法，默认返回当前对象的 [[Class]]点击并拖拽以移动 。这是一个内部属性，其格式为 [object Xxx] ，其中 Xxx 就是对象的类型。对于 Object 对象，直接调用 toString()  就能返回 [object Object] 。而对于其他对象，则需要通过 call / apply 来调用才能返回正确的类型信息。</p>
-<ol start="10">
-<li><p>介绍一下 JS 的基本数据类型？<br>Undefined、Null、Boolean、Number、String</p>
-</li>
-<li><p>介绍一下 JS 有哪些内置对象？<br>Object 是 JavaScript 中所有对象的父对象;<br>数据封装类对象：Object、Array、Boolean、Number、String<br>其他对象：Function、Argument、Math、Date、RegExp、Error</p>
-</li>
-<li><p>push()-pop()-shift()-unshift()分别是什么功能？</p>
-</li>
-</ol>
-<p><strong>// push 方法</strong><br><strong>// 将新元素添加到一个数组中，并返回数组的新长度值。</strong><br>var a=[1,2,3,4];<br>a.push(5);<br><strong>// pop 方法</strong><br><strong>// 移除数组中的最后一个元素并返回该元素。</strong><br>var a=[1,2,3,4];<br>a.pop();<br><strong>// shift 方法<br>// 移除数组中的第一个元素并返回该元素。</strong><br>var a=[1,2];<br>a.shift();<br><strong>// unshift 方法<br>// 将指定的元素插入数组开始位置并返回该数组。</strong><br>var a=[1,2];<br>a.unshift(0);</p>
-<ol start="13">
-<li>null 和 undefined 有何区别？</li>
-</ol>
-<p>1)null 表示一个对象被定义了，值为“空值”； undefined 表示不存在这个值。<br>2)undefined :是一个表示”无”的原始值或者说表示”缺少值”，就是此处应该有一个值，但是还没有定义。当尝试读取时会返回 undefined； 例如变量被声明了，但没有赋值时，就等于undefined。<br>3)注意： 在验证null时，一定要使用 === ，因为 == 无法分别 null 和 undefined</p>
-<ol start="14">
-<li>new操作符具体干了什么？</li>
-</ol>
-<p>1)创建一个空对象，并且 this 变量引用该对象。<br>2)属性和方法被加入到 this 引用的对象中。<br>3)新创建的对象由 this 所引用。</p>
-<ol start="15">
-<li>你对 JSON 了解吗？</li>
-</ol>
-<p>1)JSON(JavaScript Object Notation)是一种轻量级的数据交换格式。<br>2)它是基于JavaScript的一个子集。数据格式简单，易于读写，占用带宽小。 如：{“age”:”12”, “name”:”back”}</p>
-<ol start="16">
-<li><p>javascript的typeof返回哪些数据类型?<br>答案：<br>　　undefined、string、boolean、number、symbol(ES6)、Object、Function</p>
-</li>
-<li><p>split() join() 的区别?<br>答案：前者是将字符串切割成数组的形式，后者是将数组转换成字符串</p>
-</li>
-<li><p>事件委托是什么?<br>答案: 利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！</p>
-</li>
-<li><p> 闭包是什么，有什么特性，对页面有什么影响?<br>闭包的特性：<br>①.封闭性：外界无法访问闭包内部的数据，如果在闭包内声明变量，外界是无法访问的，除非闭包主动向外界提供访问接口；<br>②.持久性：一般的函数，调用完毕之后，系统自动注销函数，而对于闭包来说，在外部函数被调用之后，闭包结构依然保存在<br>系统中，闭包中的数据依然存在，从而实现对数据的持久使用。<br>优点：<br>① 减少全局变量。<br>② 减少传递函数的参数量<br>③ 封装；<br>缺点：<br>使用闭包会占有内存资源，过多的使用闭包会导致内存溢出等.</p>
-</li>
-<li><p> 如何阻止事件冒泡?<br>答案：ie:阻止冒泡ev.cancelBubble = true;非IE ev.stopPropagation();</p>
-</li>
-<li><p>如何阻止默认事件?<br>答案：(1)return false；(2) ev.preventDefault();</p>
-</li>
-<li><p> 如何让事件先冒泡后捕获?<br>在DOM标准事件模型中，是先捕获后冒泡。但是如果要实现先冒泡后捕获的效果，对于同一个事件，监听捕获和冒泡，分别对应相应的处理函数，监听到捕获事件，先暂缓执行，直到冒泡事件被捕获后再执行捕获之间。</p>
-</li>
-<li><p> mouseover和mouseenter的区别?<br>mouseover：当鼠标移入元素或其子元素都会触发事件，所以有一个重复触发，冒泡的过程。对应的移除事件是mouseout<br>mouseenter：当鼠标移除元素本身（不包含元素的子元素）会触发事件，也就是不会冒泡，对应的移除事件是mouseleave</p>
-</li>
-<li><p>js的new操作符做了哪些事情?<br>new 操作符新建了一个空对象，这个对象原型指向构造函数的prototype，执行构造函数后返回这个对象。</p>
-</li>
-<li><p> js的各种位置，比如clientHeight,scrollHeight,offsetHeight ,以及scrollTop, offsetTop,clientTop的区别？<br>clientHeight：表示的是可视区域的高度，不包含border和滚动条<br>offsetHeight：表示可视区域的高度，包含了border和滚动条<br>scrollHeight：表示了所有区域的高度，包含了因为滚动被隐藏的部分。<br>clientTop：表示边框border的厚度，在未指定的情况下一般为0<br>scrollTop：滚动后被隐藏的高度，获取对象相对于由offsetParent属性指定的父坐标(css定位的元素或body元素)距离顶端的高度。</p>
-</li>
-<li><p> Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?<br>Doctype声明于文档最前面，告诉浏览器以何种方式来渲染页面，这里有两种模式，严格模式和混杂模式。<br>严格模式的排版和 JS 运作模式是 以该浏览器支持的最高标准运行。<br>混杂模式，向后兼容，模拟老式浏览器，防止浏览器无法兼容页面。</p>
-</li>
-<li><p> link标签和import标签的区别?<br>link属于html标签，而@import是css提供的<br>页面被加载时，link会同时被加载，而@import引用的css会等到页面加载结束后加载。<br>link是html标签，因此没有兼容性，而@import只有IE5以上才能识别。<br>link方式样式的权重高于@import的。</p>
-</li>
-<li><p>多行元素的文本省略号?<br><code>display: -webkit-box ——webkit-box-orient:vertical ——webkit-line-clamp:3 overflow:hidden</code></p>
-</li>
-<li><p>简述一下src与href的区别？<br>href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档(链接）之间的链接，用于超链接。<br>src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。<br>当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</p>
-</li>
-</ol>
-<p><strong>30.  HTTP的几种请求方法用途?</strong><br>1、GET方法<br>发送一个请求来取得服务器上的某一资源<br>2、POST方法<br>向URL指定的资源提交数据或附加新的数据<br>3、PUT方法<br>跟POST方法很像，也是想服务器提交数据。但是，它们之间有不同。PUT指定了资源在服务器上的位置，而POST没有<br>4、HEAD方法<br>只请求页面的首部<br>5、DELETE方法<br>删除服务器上的某资源<br>6、OPTIONS方法<br>它用于获取当前URL所支持的方法。如果请求成功，会有一个Allow的头包含类似“GET,POST”这样的信息<br>7、TRACE方法<br>TRACE方法被用于激发一个远程的，应用层的请求消息回路<br>8、CONNECT方法<br>把请求连接转换到透明的TCP/IP通道</p>
-<p><strong>31. 从浏览器地址栏输入url到显示页面的步骤?</strong><br>浏览器根据请求的URL交给DNS域名解析，找到真实IP，向服务器发起请求；<br>服务器交给后台处理完成后返回数据，浏览器接收文件（HTML、JS、CSS、图象等）；<br>浏览器对加载到的资源（HTML、JS、CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）；<br>载入解析到的资源文件，渲染页面，完成。</p>
-<p><strong>32. 如何进行网站性能优化?</strong><br><strong>content方面</strong><br>减少HTTP请求：合并文件、CSS精灵、inline Image<br>减少DNS查询：DNS缓存、将资源分布到恰当数量的主机名<br>减少DOM元素数量<br><strong>Server方面</strong><br>使用CDN<br>配置ETag<br>对组件使用Gzip压缩<br><strong>Cookie方面</strong><br>减小cookie大小<br><strong>css方面</strong><br>将样式表放到页面顶部<br>不使用CSS表达式<br>使用<link>不使用@import<br><strong>Javascript方面</strong><br>将脚本放到页面底部<br>将javascript和css从外部引入<br>压缩javascript和css<br>删除不需要的脚本<br>减少DOM访问<br><strong>图片方面</strong><br>优化图片：根据实际颜色需要选择色深、压缩<br>优化css精灵<br>不要在HTML中拉伸图片</p>
-<p><strong>33. 说说你对作用域链的理解?</strong><br>作用域链的作用是保证执行环境里有权访问的变量和函数是有序的，作用域链的变量只能向上访问，变量访问到window对象即被终止，作用域链向下访问变量是不被允许的<br>简单的说，作用域就是变量与函数的可访问范围，即作用域控制着变量与函数的可见性和生命周期</p>
-<p><strong>34. 谈谈This对象的理解?</strong><br>this总是指向函数的直接调用者（而非间接调用者）<br>如果有new关键字，this指向new出来的那个对象<br>在事件中，this指向触发这个事件的对象，特殊的是，IE中的attachEvent中的this总是指向全局对象Window</p>
-<p><strong>35. XML和JSON的区别？</strong><br><strong>数据体积方面</strong><br>JSON相对于XML来讲，数据的体积小，传递的速度更快些。<br><strong>数据交互方面</strong><br>JSON与JavaScript的交互更加方便，更容易解析处理，更好的数据交互<br><strong>数据描述方面</strong><br>JSON对数据的描述性比XML较差<br><strong>传输速度方面</strong><br>JSON的速度要远远快于XML</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/01/sharksmiles/" rel="prev" title="Js基本Api知识">
+      <i class="fa fa-chevron-left"></i> Js基本Api知识
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
